@@ -101,7 +101,6 @@ html {
 
     .input-number {
         height: 60px;
-
     }
 
     .no-m-right {
@@ -115,5 +114,6 @@ html {
 
     .btn {
         margin: 8px 0;
+        -webkit-tap-highlight-color: transparent;
     }
 }
