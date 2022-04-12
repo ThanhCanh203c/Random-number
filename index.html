@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomize</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./randomMachine.css">
+</head>
+<body>
+    <div class="main">
+        <h1 id="name-app">Random number</h1>
+        <div class="output">
+            <div class="num" id="num-1">0</div>
+            <div class="num" id="num-2">0</div>
+            <div class="num" id="num-3">0</div>
+        </div>
+        <div class="input-section">
+            <div>
+                Từ
+                <input type="number" value="0" class="input-number" id="start-input">
+            </div>
+            <div>
+                Đến
+                <input type="number" value="999" class="input-number no-m-right" id="stop-input">
+            </div>
+        </div>
+        <div class="btn-section">
+            <button class="btn" id="start-btn">Bắt đầu</button>
+            <button class="btn" id="stop-btn">Dừng</button>
+        </div>
+
+    </div>
+    <div class="footer">Cảnh làm 😂</div>
+        
+    <script src="./randomMachine.js" language="javascript"></script>
+</body>
+</html>
