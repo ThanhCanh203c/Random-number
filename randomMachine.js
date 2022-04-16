@@ -14,12 +14,13 @@ start.addEventListener('click', function () {
     if (stop_input.value > 999 || stop_input.value <= start_input.value) stop_input.value = 999;
     if (start_input.value < 0 || stop_input.value <= start_input.value) start_input.value = 0;
 
-    var result = Math.floor(Math.random() * (parseInt(stop_input.value) + 1 - start_input.value) + start_input.value);
+    var result;
     if (!check) {
         var k = setInterval(function () {
             num1.innerHTML = Math.floor(Math.random() * 10);
             num2.innerHTML = Math.floor(Math.random() * 10);
             num3.innerHTML = Math.floor(Math.random() * 10);
+            result = Math.floor(Math.random() * (parseInt(stop_input.value) + 1 - parseInt(start_input.value)) + parseInt(start_input.value));
         }, 30)
         stop.onclick = function () {
             clearInterval(k);
